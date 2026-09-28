@@ -1,20 +1,55 @@
-html, body {
-    width: 90%;
+*,
+*::before,
+ *::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 75%;
     margin: 0 auto;
-    padding: 0px;
+     padding: 20px; 
 }
 
 nav ul {
-    list-style: none; 
-    padding-left:0;
+    list-style: none;
+    padding-left: 0;
 }
+
 nav li {
-    display:inline;
+    display: inline;
 
 }
-.active {
-    color :white;
-    background-color:green;
-    padding:0.5em;
 
+.active {
+    color: white;
+    background-color: green;
+    padding: 0.5em;
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid lightgrey;
+    background: lightblue;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .card {
+        width: calc(50% - 30px);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .card {
+        width: calc(33.333% - 30px);
+    }
 }
