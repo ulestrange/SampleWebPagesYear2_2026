@@ -1,15 +1,28 @@
 *,
 *::before,
- *::after {
+*::after {
     box-sizing: border-box;
 }
 
 html,
 body {
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
-     padding: 20px; 
+    padding: 20px;
+    background-color: lightpink;
 }
+
+nav {
+    background: #006847;
+    color: white;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 
 nav ul {
     list-style: none;
@@ -38,7 +51,9 @@ nav li {
     border: 1px solid lightgrey;
     background: lightblue;
     width: 100%;
+    padding: 0px 5px;
 }
+
 
 /* Tablet */
 @media (min-width: 768px) {
@@ -52,4 +67,65 @@ nav li {
     .card {
         width: calc(33.333% - 30px);
     }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background: #006847;
+    color: white;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 1rem 0 0;
+
+    display: none;
+}
+
+#menu.show {
+    display: block;
+}
+
+#menu li {
+    padding: 0.5rem 0;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
 }
